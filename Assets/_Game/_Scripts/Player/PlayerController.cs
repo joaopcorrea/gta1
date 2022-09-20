@@ -42,8 +42,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            currentCar.Drive(direction.y);
-            currentCar.Turn(direction.x);
+            // currentCar.Drive(direction.y);
+            // currentCar.Turn(direction.x);
 
             if (requestEnterCar)
             {
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     {
         cameraController.target = transform;
         graphic.SetActive(true);
-        transform.position = currentCar.driverDoor.position;
+        // transform.position = currentCar.driverDoor.position;
         currentCar = null;
     }
     
